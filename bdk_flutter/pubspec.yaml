@@ -1,0 +1,26 @@
+name: bdk_flutter
+description: Flutter wrapper for bdk_dart that builds and bundles native binaries for iOS and Android.
+version: 0.0.1
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ffi: ^2.1.4
+  bdk_dart:
+    path: ../bdk-dart
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: BdkFlutterPlugin
+      android:
+        package: org.bitcoindevkit.bdk_flutter
+        pluginClass: BdkFlutterPlugin
+
+
