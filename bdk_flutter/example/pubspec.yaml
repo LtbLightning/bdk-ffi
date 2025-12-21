@@ -1,0 +1,22 @@
+name: bdk_dart_example
+description: "Example Flutter app demonstrating bdk_dart usage"
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bdk_flutter:
+    path: ..
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
